@@ -6,12 +6,38 @@
     android:background="#F44336"
     tools:context=".Fragment1">
 
-    <DatePicker
-        android:layout_gravity="center_horizontal"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:datePickerMode="spinner"
-        android:id="@+id/datePicker"/>
+        android:layout_height="match_parent">
+
+        <DatePicker
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="calendar"
+            android:id="@+id/datePicker"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/editDiary"
+            android:hint="일기 없음"
+            android:background="#fff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_write"
+            android:text="save"/>
+
+
+
+    </LinearLayout>
+
+
 
 
 </FrameLayout>
