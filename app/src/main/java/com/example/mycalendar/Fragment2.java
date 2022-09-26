@@ -18,16 +18,14 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_2, container, false);
+        View view  = inflater.inflate(R.layout.fragment_3, container, false);
 
-        Button btn_s = view.findViewById(R.id.btn_small);
-        Button btn_l = view.findViewById(R.id.btn_large);
+        Button btn1 = view.findViewById(R.id.btn_small);
+        Button btn2 = view.findViewById(R.id.btn_large);
+
         imageView = view.findViewById(R.id.image_main);
-
-        btn_s.setOnClickListener(this);
-        btn_l.setOnClickListener(this);
-
-
+        btn1.setOnClickListener(this);
+        btn2.setOnClickListener(this);
         return view;
     }
 
@@ -43,7 +41,6 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
                 imageView.setScaleX(imageView.getScaleX()+0.1f);
                 imageView.setScaleY(imageView.getScaleY()+0.1f);
                 break;
-
         }
     }
 }
